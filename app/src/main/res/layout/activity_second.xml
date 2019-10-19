@@ -97,13 +97,14 @@
                     android:id="@+id/rdb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Male" />
+                    android:text="Female" />
             </RadioGroup>
 
             <ToggleButton
+                android:id="@+id/buttonToggle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:checked="true"/>
+                android:checked="true" />
 
         </LinearLayout>
 
@@ -118,6 +119,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonDownload"
+            android:onClick="_download"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -126,6 +128,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonExit"
+            android:onClick="showAlert"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
